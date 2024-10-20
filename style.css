@@ -1,0 +1,163 @@
+/* Global Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f8cfd4, #f3a9b2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.screen {
+  text-align: center;
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ff6b81;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.thankyou-messages {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-height: 60vh;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.thankyou-messages p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #555;
+  margin: 10px 0;
+  animation: fadeIn 0.8s ease;
+}
+
+.thankyou-messages p:nth-child(odd) {
+  color: #ff6b81;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar Styling */
+.thankyou-messages::-webkit-scrollbar {
+  width: 10px;
+}
+
+.thankyou-messages::-webkit-scrollbar-thumb {
+  background-color: #ff6b81;
+  border-radius: 10px;
+}
+
+.thankyou-messages::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .thankyou-messages {
+    padding: 15px;
+  }
+}
+
+
+.hidden {
+  display: none;
+}
+
+.screen {
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  background-color: #ff4d4d;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e60000;
+}
+
+/* Floating Buttons */
+.floatingButton {
+  display: inline-block;
+  background-color: #ff4d4d;
+  color: white;
+  padding: 15px 30px;
+  margin: 10px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.floatingButton:hover {
+  transform: translateY(-10px);
+}
+
+/* Slideshow Style */
+.slideshow-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  animation: slideshow 1.5s infinite;
+}
+
+@keyframes slideshow {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Styling for Uploaded Photos */
+#uploadedPhotos {
+  margin-top: 20px;
+}
+
+#uploadedPhotos img {
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 100px;
+  margin: 10px;
+}
+
+#uploadedPhotos button {
+  margin-left: 10px;
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#uploadedPhotos button:hover {
+  background-color: #cc3333;
+}

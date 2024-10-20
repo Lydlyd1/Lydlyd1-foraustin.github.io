@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Austin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Layar Intro -->
+  <div id="intro" class="screen">
+    <h1>HAIII BYBYYY</h1>
+    <input type="text" id="codeInput" placeholder="Enter Code">
+    <button onclick="checkCode()">Submit</button>
+    <div id="errorMessage"></div>
+  </div>
+
+  <!-- Halaman Utama dengan Pilihan Tombol -->
+  <div id="mainPage" class="screen hidden">
+    <h1>Pilih Byyy</h1>
+    <button onclick="navigateTo('ssstt')" class="floatingButton">sssttt</button>
+    <button onclick="navigateTo('thankyou')" class="floatingButton">thank you</button>
+    <button onclick="navigateTo('music')" class="floatingButton">music</button>
+    <button onclick="navigateTo('muach')" class="floatingButton">muach</button>
+  </div>
+
+  <!-- Halaman ssstt (Upload Foto) -->
+  <div id="ssstt" class="screen hidden">
+    <h1>Upload Our Secret Photos</h1>
+    <input type="file" id="uploadPhoto" accept="image/*">
+    <button onclick="uploadPhoto()">Upload Photo</button>
+    <div id="uploadedPhotos"></div>
+  </div>
+
+  <!-- Halaman thank you -->
+<div id="thankyou" class="screen hidden">
+  <h1>100 Messages For you</h1>
+  <div class="thankyou-messages">
+    <p>Thanks for being the best!</p>
+    <p>Seriously, you’re amazing!</p>
+    <p>I can’t thank you enough for everything you do.</p>
+    <p>You work so hard for us—thank you!</p>
+    <p>Thanks for always being there for me.</p>
+    <p>You’re a real gem!</p>
+    <p>I appreciate you more than you know.</p>
+    <p>Thanks for making time for us.</p>
+    <p>You’re the sweetest, thank you for all the little things!</p>
+    <p>Your effort is everything—thanks a bunch!</p>
+    <p>I’m so grateful to have you in my life.</p>
+    <p>You’re the best part of my day!</p>
+    <p>Thank you for believing in us.</p>
+    <p>Your dedication is unreal</p>
+    <p>Thanks for making me feel so special.</p>
+    <p>You make everything better!</p>
+    <p>I appreciate all the sacrifices you make for us.</p>
+    <p>Thank you for being my rock.</p>
+    <p>You always know how to make me smile—thanks!</p>
+    <p>You’re seriously my favorite—thank you!</p>
+    <p>Thanks for putting in the work for us!</p>
+    <p>Your love means the world to me—thank you!</p>
+    <p>I can’t imagine my life without you—thanks!</p>
+    <p>You’re awesome—thank you for being you!</p>
+    <p>Thanks for being my biggest cheerleader.</p>
+    <p>Your hard work doesn’t go unnoticed—thanks!</p>
+    <p>Thank you for always making time for me.</p>
+    <p>I love how you always support me—thank you!</p>
+    <p>You’re my favorite person—thanks for everything!</p>
+    <p>Thank you for all the love you give me.</p>
+    <p>I appreciate how hard you work for us—thank you!</p>
+    <p>You make my heart happy</p>
+    <p>Thanks for always lifting me up!</p>
+    <p>Your kindness is everything—thank you!</p>
+    <p>Thank you for being my best friend.</p>
+    <p>You make every moment special</p>
+    <p>I’m lucky to have you—thank you!</p>
+    <p>Thanks for being so patient with me.</p>
+    <p>You bring so much joy to my life!</p>
+    <p>Thank you for believing in my dreams.</p>
+    <p>You’re the best—thanks for everything you do!</p>
+    <p>Thank you for always being honest with me.</p>
+    <p>Your hard work is inspiring</p>
+    <p>I love how thoughtful you are</p>
+    <p>You’re a total lifesaver</p>
+    <p>Thank you for always being my shoulder to cry on.</p>
+    <p>Your love is a treasure</p>
+    <p>Thanks for making me feel valued.</p>
+    <p>You’re seriously incredible!</p>
+    <p>I appreciate your support more than you know</p>
+    <p>Thank you for making our relationship amazing.</p>
+    <p>Your effort is what keeps us strong—thanks!</p>
+    <p>Thank you for always making me laugh.</p>
+    <p>You’re one of a kind</p>
+    <p>Thanks for being my safe place.</p>
+    <p>Your sacrifices show how much you care!</p>
+    <p>I’m grateful for your love</p>
+    <p>You make my heart smile</p>
+    <p>Thank you for being my go-to person.</p>
+    <p>Your kindness makes everything better—thanks!</p>
+    <p>Thanks for always being so understanding.</p>
+    <p>I appreciate how hard you work for us!</p>
+    <p>You’re my sunshine</p>
+    <p>Thanks for being so thoughtful.</p>
+    <p>You’re a blessing in my life</p>
+    <p>Thank you for making time for us!</p>
+    <p>You’re my favorite human—thanks for being awesome!</p>
+    <p>Thank you for your constant encouragement.</p>
+    <p>Your support means everything—thanks!</p>
+    <p>I love how much you care</p>
+    <p>Thank you for making every day special.</p>
+    <p>You’re truly one in a million—thanks!</p>
+    <p>Thanks for always cheering me on.</p>
+    <p>I appreciate your love so much</p>
+    <p>You’re my happy place—thank you!</p>
+    <p>Thanks for always being there to listen.</p>
+    <p>You bring so much light into my life—thank you!</p>
+    <p>Your love is like a warm hug—thanks!</p>
+    <p>Thank you for making our moments together unforgettable.</p>
+    <p>You’re the best partner I could ask for!</p>
+    <p>Thank you for always being honest with me.</p>
+    <p>You inspire me to be better</p>
+    <p>Your efforts are what make this work</p>
+    <p>Thanks for being so supportive of my dreams.</p>
+    <p>I appreciate everything you do</p>
+    <p>You make my life brighter—thanks for being you!</p>
+    <p>Thank you for all the love you give me!</p>
+    <p>You’re a true gem</p>
+    <p>I’m lucky to have you by my side</p>
+    <p>Thank you for always believing in me.</p>
+    <p>Your sacrifices mean the world to me</p>
+    <p>You’re the highlight of my day</p>
+    <p>Thanks for being my partner in crime.</p>
+    <p>Your love is a gift I cherish</p>
+    <p>Thank you for always making me feel cherished.</p>
+    <p>You’re seriously the best boyfriend</p>
+    <p>Thanks for always finding time for us.</p>
+    <p>Your kindness makes every day better!</p>
+    <p>I’m grateful for you every day—thanks a lot!</p>
+    <p>I love you to the moon and back</p>
+  </div>
+  <audio controls autoplay loop>
+    <source src="romantic_song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+  <!-- Halaman music -->
+  <div id="music" class="screen hidden">
+    <h1>My Playlist Special For You</h1>
+    <iframe src="https://open.spotify.com/embed/playlist/3FH08M29h94ys37XviaOpu?utm_source=generator" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div>
+
+  <!-- Halaman muach -->
+  <div id="muach" class="screen hidden">
+    <h1>COMING SOON</h1>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
